@@ -1,0 +1,236 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6B2F93641481B7B5003DE8E5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B2F93631481B7B5003DE8E5 /* Foundation.framework */; };
+		6B2F93671481B7B5003DE8E5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B2F93661481B7B5003DE8E5 /* main.m */; };
+		6B2F936B1481B7B5003DE8E5 /* GHBufferedReader.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6B2F936A1481B7B5003DE8E5 /* GHBufferedReader.1 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6B2F935D1481B7B5003DE8E5 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				6B2F936B1481B7B5003DE8E5 /* GHBufferedReader.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		6B2F935F1481B7B5003DE8E5 /* GHBufferedReader */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = GHBufferedReader; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B2F93631481B7B5003DE8E5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6B2F93661481B7B5003DE8E5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6B2F93691481B7B5003DE8E5 /* GHBufferedReader-Prefix.pch */ = {isa = PBXFileReference; path = "GHBufferedReader-Prefix.pch"; sourceTree = "<group>"; };
+		6B2F936A1481B7B5003DE8E5 /* GHBufferedReader.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = GHBufferedReader.1; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6B2F935C1481B7B5003DE8E5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B2F93641481B7B5003DE8E5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6B2F93541481B7B5003DE8E5 = {
+			isa = PBXGroup;
+			children = (
+				6B2F93651481B7B5003DE8E5 /* GHBufferedReader */,
+				6B2F93621481B7B5003DE8E5 /* Frameworks */,
+				6B2F93601481B7B5003DE8E5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6B2F93601481B7B5003DE8E5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6B2F935F1481B7B5003DE8E5 /* GHBufferedReader */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6B2F93621481B7B5003DE8E5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6B2F93631481B7B5003DE8E5 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6B2F93651481B7B5003DE8E5 /* GHBufferedReader */ = {
+			isa = PBXGroup;
+			children = (
+				6B2F93661481B7B5003DE8E5 /* main.m */,
+				6B2F936A1481B7B5003DE8E5 /* GHBufferedReader.1 */,
+				6B2F93681481B7B5003DE8E5 /* Supporting Files */,
+			);
+			path = GHBufferedReader;
+			sourceTree = "<group>";
+		};
+		6B2F93681481B7B5003DE8E5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6B2F93691481B7B5003DE8E5 /* GHBufferedReader-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6B2F935E1481B7B5003DE8E5 /* GHBufferedReader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B2F936E1481B7B5003DE8E5 /* Build configuration list for PBXNativeTarget "GHBufferedReader" */;
+			buildPhases = (
+				6B2F935B1481B7B5003DE8E5 /* Sources */,
+				6B2F935C1481B7B5003DE8E5 /* Frameworks */,
+				6B2F935D1481B7B5003DE8E5 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GHBufferedReader;
+			productName = GHBufferedReader;
+			productReference = 6B2F935F1481B7B5003DE8E5 /* GHBufferedReader */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6B2F93561481B7B5003DE8E5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 6B2F93591481B7B5003DE8E5 /* Build configuration list for PBXProject "GHBufferedReader" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 6B2F93541481B7B5003DE8E5;
+			productRefGroup = 6B2F93601481B7B5003DE8E5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6B2F935E1481B7B5003DE8E5 /* GHBufferedReader */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6B2F935B1481B7B5003DE8E5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B2F93671481B7B5003DE8E5 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		6B2F936C1481B7B5003DE8E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		6B2F936D1481B7B5003DE8E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		6B2F936F1481B7B5003DE8E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GHBufferedReader/GHBufferedReader-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		6B2F93701481B7B5003DE8E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GHBufferedReader/GHBufferedReader-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6B2F93591481B7B5003DE8E5 /* Build configuration list for PBXProject "GHBufferedReader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B2F936C1481B7B5003DE8E5 /* Debug */,
+				6B2F936D1481B7B5003DE8E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6B2F936E1481B7B5003DE8E5 /* Build configuration list for PBXNativeTarget "GHBufferedReader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B2F936F1481B7B5003DE8E5 /* Debug */,
+				6B2F93701481B7B5003DE8E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6B2F93561481B7B5003DE8E5 /* Project object */;
+}
