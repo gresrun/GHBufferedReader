@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		6B2F93641481B7B5003DE8E5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B2F93631481B7B5003DE8E5 /* Foundation.framework */; };
 		6B2F93671481B7B5003DE8E5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B2F93661481B7B5003DE8E5 /* main.m */; };
-		6B2F936B1481B7B5003DE8E5 /* GHBufferedReader.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6B2F936A1481B7B5003DE8E5 /* GHBufferedReader.1 */; };
+		6B2F93731481B82B003DE8E5 /* GHBufferedReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B2F93721481B82B003DE8E5 /* GHBufferedReader.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -19,7 +19,6 @@
 			dstPath = /usr/share/man/man1/;
 			dstSubfolderSpec = 0;
 			files = (
-				6B2F936B1481B7B5003DE8E5 /* GHBufferedReader.1 in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
@@ -29,8 +28,9 @@
 		6B2F935F1481B7B5003DE8E5 /* GHBufferedReader */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = GHBufferedReader; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B2F93631481B7B5003DE8E5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6B2F93661481B7B5003DE8E5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		6B2F93691481B7B5003DE8E5 /* GHBufferedReader-Prefix.pch */ = {isa = PBXFileReference; path = "GHBufferedReader-Prefix.pch"; sourceTree = "<group>"; };
-		6B2F936A1481B7B5003DE8E5 /* GHBufferedReader.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = GHBufferedReader.1; sourceTree = "<group>"; };
+		6B2F93691481B7B5003DE8E5 /* GHBufferedReader-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GHBufferedReader-Prefix.pch"; sourceTree = "<group>"; };
+		6B2F93711481B82B003DE8E5 /* GHBufferedReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHBufferedReader.h; sourceTree = "<group>"; };
+		6B2F93721481B82B003DE8E5 /* GHBufferedReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHBufferedReader.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,8 +73,9 @@
 		6B2F93651481B7B5003DE8E5 /* GHBufferedReader */ = {
 			isa = PBXGroup;
 			children = (
+				6B2F93711481B82B003DE8E5 /* GHBufferedReader.h */,
+				6B2F93721481B82B003DE8E5 /* GHBufferedReader.m */,
 				6B2F93661481B7B5003DE8E5 /* main.m */,
-				6B2F936A1481B7B5003DE8E5 /* GHBufferedReader.1 */,
 				6B2F93681481B7B5003DE8E5 /* Supporting Files */,
 			);
 			path = GHBufferedReader;
@@ -139,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6B2F93671481B7B5003DE8E5 /* main.m in Sources */,
+				6B2F93731481B82B003DE8E5 /* GHBufferedReader.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,6 +231,7 @@
 				6B2F93701481B7B5003DE8E5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

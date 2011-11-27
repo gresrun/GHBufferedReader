@@ -3,20 +3,17 @@
 //  GHBufferedReader
 //
 //  Created by Greg Haines on 11/26/11.
-//  Copyright (c) 2011 __MyCompanyName__. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
+#import "GHBufferedReader.h"
 
-int main (int argc, const char * argv[])
-{
-
+int main(int argc, const char *argv[]) {
 	@autoreleasepool {
-	    
-	    // insert code here...
-	    NSLog(@"Hello, World!");
-	    
+	    GHBufferedReader *reader = [[GHBufferedReader alloc] initWithFileHandle:[NSFileHandle fileHandleWithStandardInput]];
+		[reader enumerateLinesUsingBlock:^(NSString *line, BOOL *stop) {
+			printf("%s\n", [line UTF8String]);
+		}];
 	}
     return 0;
 }
-

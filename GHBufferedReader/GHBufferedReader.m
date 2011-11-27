@@ -1,11 +1,26 @@
+//
+//  GHBufferedReader.m
+//  GHBufferedReader
+//
+//  Created by Greg Haines on 11/26/11.
+//
+
 #import "GHBufferedReader.h"
 
+#pragma mark -
+#pragma mark Implementation
 @implementation GHBufferedReader
 
+#pragma mark -
+#pragma mark Memory Management
 - (id)initWithFileHandle:(NSFileHandle *)aHandle {
+	return [self initWithFileHandle:aHandle withLineDelimiter:@"\n"];
+}
+
+- (id)initWithFileHandle:(NSFileHandle *)aHandle withLineDelimiter:(NSString *)lineEnd {
     if (self = [super init]) {
         _fileHandle = aHandle;
-        _lineDelimiterData = [@"\n" dataUsingEncoding:NSUTF8StringEncoding];
+        _lineDelimiterData = [lineEnd dataUsingEncoding:NSUTF8StringEncoding];
         _lineBuffer = [[NSMutableData alloc] initWithCapacity:8096];
         _chunkSize = 10;
     }
@@ -16,6 +31,8 @@
     [_fileHandle closeFile];
 }
 
+#pragma mark -
+#pragma mark Public Methods
 - (NSString *)readLine {
     NSString *line = nil;
     BOOL shouldReadMore = YES;
