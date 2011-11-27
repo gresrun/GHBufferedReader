@@ -6,3 +6,4 @@
 *.pyc 
 *~.nib/
 build/*
+xcuserdata
