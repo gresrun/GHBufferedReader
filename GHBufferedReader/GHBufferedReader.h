@@ -14,12 +14,11 @@
     NSUInteger _chunkSize;
 }
 
-- (id)initWithFileHandle:(NSFileHandle *)aHandle;
-- (id)initWithFileHandle:(NSFileHandle *)aHandle withLineDelimiter:(NSString *)lineEnd;
+- (id)initWithFileHandle:(NSFileHandle *)fileHandle;
+- (id)initWithFileHandle:(NSFileHandle *)fileHandle withLineDelimiter:(NSString *)lineDelimiter;
 - (NSString *)readLine;
 #if NS_BLOCKS_AVAILABLE
 - (void)enumerateLinesUsingBlock:(void(^)(NSString *, BOOL *))block;
 #endif
 
 @end
-

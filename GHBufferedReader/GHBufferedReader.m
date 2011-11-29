@@ -13,14 +13,14 @@
 
 #pragma mark -
 #pragma mark Memory Management
-- (id)initWithFileHandle:(NSFileHandle *)aHandle {
-	return [self initWithFileHandle:aHandle withLineDelimiter:@"\n"];
+- (id)initWithFileHandle:(NSFileHandle *)fileHandle {
+	return [self initWithFileHandle:fileHandle withLineDelimiter:@"\n"];
 }
 
-- (id)initWithFileHandle:(NSFileHandle *)aHandle withLineDelimiter:(NSString *)lineEnd {
+- (id)initWithFileHandle:(NSFileHandle *)fileHandle withLineDelimiter:(NSString *)lineDelimiter {
     if (self = [super init]) {
-        _fileHandle = aHandle;
-        _lineDelimiterData = [lineEnd dataUsingEncoding:NSUTF8StringEncoding];
+        _fileHandle = fileHandle;
+        _lineDelimiterData = [lineDelimiter dataUsingEncoding:NSUTF8StringEncoding];
         _lineBuffer = [[NSMutableData alloc] initWithCapacity:8096];
         _chunkSize = 10;
     }
@@ -71,4 +71,3 @@
 #endif
 
 @end
-
